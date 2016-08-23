@@ -92,8 +92,49 @@
         android:layout_height="wrap_content"
         android:entries="@array/opcao_pagamento"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_extras" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                style="@style/checkbox_pizza"
+                android:text="@string/txt_borda_recheada"/>
+
+            <CheckBox
+                style="@style/checkbox_pizza"
+                android:text="@string/txt_recheio_extra"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                style="@style/checkbox_pizza"
+                android:text="@string/txt_refrigerante"/>
+
+            <CheckBox
+                style="@style/checkbox_pizza"
+                android:text="@string/txt_sobremesa"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/txt_calcular"/>
+
 </LinearLayout>
