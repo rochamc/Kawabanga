@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opcoes_pagamento">
+        <item>@string/txt_cartao</item>
+        <item>@string/txt_vr</item>
+        <item>@string/txt_cheque</item>
+    </string-array>
+</resources>
