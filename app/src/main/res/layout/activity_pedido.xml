@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -16,9 +23,8 @@
         android:gravity="right"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_escolha_pizza" />
+        android:text="@string/txt_escolha_pizza"
+        style="@style/Header"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,11 +37,13 @@
 
             <CheckBox
                 style="@style/checkbox_pizza"
-                android:text="@string/txt_pizza_atum"/>
+                android:text="@string/txt_pizza_atum"
+                android:id="@+id/cbAtum"/>
 
             <CheckBox
                 style="@style/checkbox_pizza"
-                android:text="@string/txt_pizza_bacon"/>
+                android:text="@string/txt_pizza_bacon"
+                android:id="@+id/cbBacon"/>
 
         </LinearLayout>
 
@@ -46,18 +54,19 @@
 
             <CheckBox
                 style="@style/checkbox_pizza"
-                android:text="@string/txt_pizza_calabresa"/>
+                android:text="@string/txt_pizza_calabresa"
+                android:id="@+id/cbCalabresa"/>
 
             <CheckBox
                 style="@style/checkbox_pizza"
-                android:text="@string/txt_pizza_mussarela"/>
+                android:text="@string/txt_pizza_mussarela"
+                android:id="@+id/cbMussarela"/>
 
         </LinearLayout>
     </LinearLayout>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/Header"
         android:text="@string/txt_tamanho_pizza"/>
     <RadioGroup
         android:layout_width="match_parent"
@@ -83,18 +92,17 @@
     </RadioGroup>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_forma_pagamento"/>
+        android:text="@string/txt_forma_pagamento"
+        style="@style/Header"/>
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/opcao_pagamento"/>
+        android:entries="@array/opcao_pagamento"
+        android:id="@+id/spPagamentos"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/Header"
         android:text="@string/txt_extras" />
 
     <LinearLayout
@@ -108,11 +116,13 @@
 
             <CheckBox
                 style="@style/checkbox_pizza"
-                android:text="@string/txt_borda_recheada"/>
+                android:text="@string/txt_borda_recheada"
+                android:id="@+id/cbBordaRecheada"/>
 
             <CheckBox
                 style="@style/checkbox_pizza"
-                android:text="@string/txt_recheio_extra"/>
+                android:text="@string/txt_recheio_extra"
+                android:id="@+id/cbRecheioExtra"/>
 
         </LinearLayout>
 
@@ -123,11 +133,13 @@
 
             <CheckBox
                 style="@style/checkbox_pizza"
-                android:text="@string/txt_refrigerante"/>
+                android:text="@string/txt_refrigerante"
+                android:id="@+id/cbRefrigerante"/>
 
             <CheckBox
                 style="@style/checkbox_pizza"
-                android:text="@string/txt_sobremesa"/>
+                android:text="@string/txt_sobremesa"
+                android:id="@+id/cbSobremesa"/>
 
         </LinearLayout>
     </LinearLayout>
@@ -138,3 +150,4 @@
         android:text="@string/txt_calcular"/>
 
 </LinearLayout>
+</ScrollView>
